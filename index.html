@@ -1,67 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maldives Atolls & Islands Directory (1,192 Islands / 26 Atolls)</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Maldives Atolls & Islands Directory (1,192 Islands / 26 Atolls)
+    </title>
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <br>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <br />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1><i class="fa-solid => fa-island-tropical"></i> Maldives Archipelago Explorer</h1>
-            <p>Explore 1,192 coral islands distributed across 26 natural atolls in the Indian Ocean.</p>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>
+          <i class="fa-solid => fa-island-tropical"></i> Welcome to the Maldives
+        </h1>
+        <p>
+          Explore 1,192 coral islands distributed across 26 natural atolls in
+          the Indian Ocean.
+        </p>
 
-            <div class="stats-container">
-                <div class="stat-badge"><i class="fa-solid fa-umbrella-beach"></i> 1,192 Coral Islands</div>
-                <div class="stat-badge"><i class="fa-solid fa-compass"></i> 26 Natural Atolls</div>
-                <div class="stat-badge"><i class="fa-solid fa-hotel"></i> 52 Top Resorts</div>
-            </div>
-
-            <!-- Search Bar with Search Icon -->
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" id="searchInput" placeholder="Search atoll, attraction, island, or hotel name...">
-                <button id="clearSearchBtn" class="clear-btn" style="display:none;"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
+        <div class="stats-container">
+          <div class="stat-badge">
+            <i class="fa-solid fa-umbrella-beach"></i> 1,192 Coral Islands
+          </div>
+          <div class="stat-badge">
+            <i class="fa-solid fa-compass"></i> 26 Natural Atolls
+          </div>
+          <div class="stat-badge">
+            <i class="fa-solid fa-hotel"></i> 52 Top Resorts
+          </div>
         </div>
+
+        <!-- Search Bar with Search Icon -->
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search atoll, attraction, island, or hotel name..."
+          />
+          <button id="clearSearchBtn" class="clear-btn" style="display: none">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main class="container">
-        <!-- Filter Pills -->
-        <div class="filter-bar">
-            <span class="filter-label">Filter Region:</span>
-            <button class="filter-btn active" data-region="all">All (26 Atolls)</button>
-            <button class="filter-btn" data-region="North">North</button>
-            <button class="filter-btn" data-region="Central">Central</button>
-            <button class="filter-btn" data-region="South">South</button>
-        </div>
+      <!-- Filter Pills -->
+      <div class="filter-bar">
+        <span class="filter-label">Filter Region:</span>
+        <button class="filter-btn active" data-region="all">
+          All (26 Atolls)
+        </button>
+        <button class="filter-btn" data-region="North">North</button>
+        <button class="filter-btn" data-region="Central">Central</button>
+        <button class="filter-btn" data-region="South">South</button>
+      </div>
 
-        <!-- Atolls Grid -->
-        <div class="atoll-grid" id="atollGrid"></div>
+      <!-- Atolls Grid -->
+      <div class="atoll-grid" id="atollGrid"></div>
 
-        <div id="noResults" class="no-results" style="display: none;">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <p>No atolls or hotels match your search query.</p>
-        </div>
+      <div id="noResults" class="no-results" style="display: none">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <p>No atolls or hotels match your search query.</p>
+      </div>
     </main>
 
     <footer>
-        <p><i class="fa-solid fa-water"></i> Maldives Islands Directory & Explorer • Built for VS Code</p>
+      <p>
+        <i class="fa-solid fa-water"></i> Maldives Islands Directory & Explorer
+        • Built for VS Code
+      </p>
     </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
+  </body>
+</html>
